@@ -71,10 +71,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="{% url 'hair-home'%}">HOME</a>
-            <a class="nav-item nav-link" href="{ % url 'hair-services'%}">SERVICES</a>
-            <a class="nav-item nav-link" href="{ % url name='hair-about' %}">ABOUT</a>
-            <a class="nav-item nav-link" href="{ % url 'hair-price' %}">PRICING</a>
-            <a class="nav-item nav-link" href="{ % url 'hair-contact' %}">CONTACT US</a>
+            <a class="nav-item nav-link" href="{% url 'hair-services'%}">SERVICES</a>
+            <a class="nav-item nav-link" href="{% url 'hair-about' %}">ABOUT</a>
+            <a class="nav-item nav-link" href="{% url 'hair-price' %}">PRICING</a>
+            <a class="nav-item nav-link" href="{% url 'hair-contact' %}">CONTACT US</a>
           </div>
         </div>
       </nav>
@@ -372,7 +372,7 @@
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
    <!-- javascript --> 
-   <script src="js/owl.carousel.js"></script>
+   <script src="{% static 'js/owl.carousel.js' %}"></script>
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
    <script>
      $('#myCarousel').carousel({
